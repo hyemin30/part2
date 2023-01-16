@@ -1,3 +1,12 @@
+-- 테스트 계정
+-- TODO: 테스트용이지만 비밀번호가 노출된 데이터 세팅. 개선하는 것이 좋을 지 고민해 보자.
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('uno', '{noop}asdf1234', 'Uno', 'uno@mail.com', 'I am Uno.', now(), 'uno', now(), 'uno')
+;
+insert into user_account (user_id, user_password, nickname, email, memo, created_at, created_by, modified_at, modified_by) values
+    ('uno2', '{noop}asdf1234', 'Uno2', 'uno2@mail.com', 'I am Uno2.', now(), 'uno2', now(), 'uno2')
+;
+
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Morbi vel lectus in quam fringilla rhoncus.', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Pink', 'Johnette', 'Jessalin', '2023-01-05 09:34:20', '2022-11-26 03:46:02');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('In hac habitasse platea dictumst.', 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', 'Maroon', 'Christoper', 'Marylou', '2022-12-09 11:32:11', '2022-02-09 04:49:50');
 insert into article (title, content, hashtag, created_by, modified_by, created_at, modified_at) values ('Nullam molestie nibh in lectus.', 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', 'Red', 'Adaline', 'Kathryn', '2022-06-16 15:55:25', '2022-11-21 03:31:30');
