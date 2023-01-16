@@ -38,6 +38,9 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 
+    //사용자 properties도 문서 세팅이 가능해짐
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
 //  rest api 만드는거
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
     implementation 'org.springframework.data:spring-data-rest-hal-explorer' //api 테스트용
